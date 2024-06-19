@@ -26,253 +26,274 @@
         </div>
 
         <div class="inputs__wrapper">
-        <div class="input">
-            <span class="input-heading">Date</span>
-            <input class="input-date" type="text" placeholder="from" data-input>
+            <div class="input">
+                <span class="input-heading">Date</span>
+                <input class="input-date" type="text" placeholder="from" data-input aria-label="From date">
 
-            <a class="input-button" title="clear" data-clear>
-                <img src="./img/icons/icon-plus.png" alt="clear" class="icon-close"></img>
-            </a>
+                <a class="input-button" title="clear" data-clear>
+                    <img src="./img/icons/icon-plus.png" alt="clear" class="icon-close">
+                </a>
 
-            <a class="input-button toggle" title="toggle" data-toggle>
-                <img src="./img/icons/icon-calendar.png" alt="calendar" class="icon-calendar"></img>
-            </a>
-        </div>
-        <div class="input">
-            <input class="input-date" type="text" placeholder="09_08_2016" data-input>
+                <a class="input-button toggle" title="toggle" data-toggle>
+                    <img src="./img/icons/icon-calendar.png" alt="calendar" class="icon-calendar">
+                </a>
+            </div>
+            <div class="input">
+                <input class="input-date" type="text" placeholder="09_08_2016" data-input aria-label="From date">
 
-            <a class="input-button" title="clear" data-clear>
-                <img src="./img/icons/icon-plus.png" alt="clear" class="icon-close"></img>
-            </a>
+                <a class="input-button" title="clear" data-clear>
+                    <img src="./img/icons/icon-plus.png" alt="clear" class="icon-close">
+                </a>
 
-            <a class="input-button toggle" title="toggle" data-toggle>
-                <img src="./img/icons/icon-calendar.png" alt="calendar" class="icon-calendar"></img>
-            </a>
-        </div>
+                <a class="input-button toggle" title="toggle" data-toggle>
+                    <img src="./img/icons/icon-calendar.png" alt="calendar" class="icon-calendar">
+                </a>
+            </div>
         </div>
 
     </div>
 </header>
 
 <main class="main">
+    <div class="main__wrapper">
+        <div class="svg-buttons">
+            <svg class="svg-button" data-view="grid" width="22" height="22" viewBox="0 0 22 22" fill="#3D8EDA" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6" height="6"/>
+                <rect y="8" width="6" height="6"/>
+                <rect x="0" y="16" width="6" height="6"/>
+                <rect x="8" y="0" width="6" height="6"/>
+                <rect x="16" y="0" width="6" height="6"/>
+                <rect x="8" y="8" width="6" height="6"/>
+                <rect x="8" y="16" width="6" height="6"/>
+                <rect x="16" y="8" width="6" height="6"/>
+                <rect x="16" y="16" width="6" height="6"/>
+            </svg>
 
-    <button data-view="grid">Grid</button>
-    <button data-view="list">List</button>
+            <svg class="svg-button" data-view="list" width="24" height="22" viewBox="0 0 24 22" fill="#C8C7C7" xmlns="http://www.w3.org/2000/svg">
+                <rect width="6" height="6"/>
+                <rect y="8" width="6" height="6"/>
+                <rect y="16" width="6" height="6"/>
+                <rect x="9" y="10" width="15" height="2"/>
+                <rect x="9" y="18" width="15" height="2"/>
+                <rect x="9" y="2" width="15" height="2"/>
+            </svg>
+        </div>
 
-    <div class="posts" data-template="list">
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-1.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
+        <div class="posts">
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-1.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
                     </div>
                 </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-2.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
                     </div>
                 </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-3.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-4.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-5.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-6.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-7.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-8.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
+                </div>
+            </div>
+            <div class="post">
+                <img src="img/pictures/Rectangle-ava-9.png" alt="Post image" class="post__image">
+                <div class="post__data">
+                    <div class="post__data-section">
+                        <span class="section-date">Today</span>
+                        <div class="section-stats">
+                            <span class="likes">128</span>
+                            <span class="comments">31</span>
+                        </div>
+                    </div>
+                    <div class="post__data-section">
+                        <span class="section-date">9-08-2016</span>
+                        <div class="section-stats">
+                            <span class="likes">67</span>
+                            <span class="comments">22</span>
+                        </div>
+                    </div>
+                    <div class="post__data-upload">
+                        <span class="upload-description">Image upload</span>
+                        <span class="upload-date">11-04-2016</span>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-2.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-3.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-4.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-5.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-6.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-7.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-8.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
-        <div class="post">
-            <img src="img/pictures/Rectangle-ava-9.png" alt="Post image" class="post__image">
-            <div class="post__data">
-                <div class="post__data-section">
-                    <span class="section-date">Today</span>
-                    <div class="section-stats">
-                        <span class="likes">128</span>
-                        <span class="comments">31</span>
-                    </div>
-                </div>
-                <div class="post__data-section">
-                    <span class="section-date">9-08-2016</span>
-                    <div class="section-stats">
-                        <span class="likes">67</span>
-                        <span class="comments">22</span>
-                    </div>
-                </div>
-                <div class="post__data-upload">
-                    <span class="upload-description">Image upload</span>
-                    <span class="upload-date">11-04-2016</span>
-                </div>
-            </div>
-        </div>
+
+        <button id="load-more">LOAD MORE</button>
+
+        <img class="bg-img-top" src="img/bg-vector-top.png" alt="Background picture" />
+        <img class="bg-img-bottom" src="img/bg-vector-bottom.png" alt="Background picture" />
     </div>
-
-    <button id="load-more">LOAD MORE</button>
-
-    <img class="bg-img-top" src="img/bg-vector-top.png" alt="Background picture" />
-    <img class="bg-img-bottom" src="img/bg-vector-bottom.png" alt="Background picture" />
 </main>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>

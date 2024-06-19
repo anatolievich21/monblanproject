@@ -153,14 +153,39 @@ body {
 /*MAIN*/
 
 .main {
-    max-width: 1488px;
     flex-direction: column;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
 }
 
+.main__wrapper {
+    max-width: 836px;
+}
+
+.svg-buttons {
+    display: flex;
+    gap: 22px;
+    margin: 22px 0;
+    justify-content: end;
+}
+
+.svg-button {
+    display: inline-block;
+    cursor: pointer;
+    transition: fill 0.3s ease-in-out;
+}
+
+.svg-button.active {
+    fill: #C8C7C7;
+}
+
+.svg-button.inactive {
+    fill: #3D8EDA;
+}
+
+
+/*VIEW LIST*/
 .posts[data-template="list"] {
     display: block;
 }
@@ -170,38 +195,21 @@ body {
     width: 100%;
     margin-bottom: 8px;
     background: #fff;
-    overflow: hidden;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 }
 
-.posts[data-template="grid"] {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.posts[data-template="grid"] .post {
-    width: calc(33.333% - 10px);
-    margin-bottom: 10px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-
-.post__image {
+.posts[data-template="list"] .post__image {
     width: 86px;
     height: 86px;
     object-fit: cover;
 }
 
-.post__data {
+.posts[data-template="list"] .post__data {
     display: flex;
     font-weight: 500;
 }
 
-.post__data-section, .post__data-upload {
+.posts[data-template="list"] .post__data-section, .posts[data-template="list"] .post__data-upload {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -209,18 +217,82 @@ body {
     padding: 0 30px;
 }
 
-.post__data-section {
+.posts[data-template="list"] .post__data-section {
     margin-right: 100px;
 }
 
-.post__data-upload {
+.posts[data-template="list"] .post__data-upload {
     margin-right: 52px;
     margin-left: 16px;
 }
 
-.section-date, .upload-description {
+.posts[data-template="list"].section-date, .posts[data-template="list"] .upload-description {
     margin-bottom: 8px;
 }
+
+/*VIEW GRID*/
+
+.posts[data-template="grid"] {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 836px;
+    margin: 0 auto;
+}
+
+.posts[data-template="grid"] .post {
+    width: 24.28%;
+    margin-bottom: 10px;
+    background: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+.posts[data-template="grid"] .post__image {
+    height: 203px;
+    object-fit: cover;
+}
+
+.posts[data-template="grid"] .post__data {
+    display: flex;
+    /*flex-direction: column;*/
+    flex-wrap: wrap;
+    font-weight: 500;
+    /*padding: 12px;*/
+}
+
+.posts[data-template="grid"] .post__data-section {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+}
+
+.posts[data-template="grid"] .section-date {
+    margin-bottom: 7px;
+}
+
+.posts[data-template="grid"] .section-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 0;
+}
+
+.posts[data-template="grid"] .post__data-upload {
+    display: flex;
+    justify-content: space-around;
+}
+
+.posts[data-template="grid"] .upload-description {
+    display: block;
+}
+
+.posts[data-template="grid"] .upload-date {
+    font-size: 12px;
+    display: block;
+}
+
+
 
 .likes, .comments {
     font-size: 14px;
@@ -261,7 +333,7 @@ body {
 
 #load-more {
     display: block;
-    margin: 24px 0;
+    margin: 24px auto;
     padding: 7px 26px;
     border: #929292 1px solid ;
     border-radius: 14px;
