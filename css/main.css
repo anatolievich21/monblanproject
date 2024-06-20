@@ -338,32 +338,6 @@ body {
 
 /* Media queries */
 
-
-
-
-
-/* Medium devices (desktops, 768px and up) */
-@media (min-width: 768px) and (max-width: 992px) {
-
-}
-
-/* Portrait tablets and small desktops */
-/*@media (min-width: 768px) and (max-width: 991px) {*/
-/*    .header {*/
-/*        height: 140px;*/
-/*    }*/
-
-/*    .header__logo {*/
-/*        margin: 0;*/
-/*    }*/
-
-/*    .header__logo img{*/
-/*        height: 100px;*/
-/*    }*/
-
-    
-
-
     @media (min-width: 768px) and (max-width: 991px) {
         .main__wrapper {
             width: 90%;
